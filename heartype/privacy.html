@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hear&amp;Type 隐私政策</title>
+<style>
+  :root { --bg: #ffffff; --text: #1c1c1e; --muted: #6e6e73; --line: #e5e5ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --text: #f2f2f7; --muted: #98989d; --line: #2c2c2e; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.7 -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: 14px; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Hear&amp;Type 隐私政策</h1>
+<p class="muted">生效日期：2026 年 11 月 25 日</p>
+
+<p>Hear&amp;Type 是一个语音输入键盘：在任何输入框里说一段话，App 把它识别成文字、整理好再打到输入框里。我们（开发者）不运营任何服务器，不收集、不保存、也看不到你的任何数据。下面说清楚你的数据在哪里、会发到哪里。</p>
+
+<h2>1. 数据存在哪里</h2>
+<ul>
+  <li>识别和整理过的文字记录（最近 300 条）、最近 20 段录音、词典、更正过的写法、自动热词、自定义指令和用量统计，都只保存在你这台 iPhone 上。</li>
+  <li>用拼音键盘打字时记住的常用词，只保存在键盘自己的存储里。</li>
+  <li>App 不把数据写进 iCloud，也不做任何备份上传。</li>
+  <li>App 会在手机上记一份运行日志，方便排查问题。日志只记录字数、耗时这类数字，不记录你说的话和打的字。</li>
+</ul>
+
+<h2>2. 会发到哪里</h2>
+<p>识别和整理要用到大模型服务。Hear&amp;Type 使用<strong>你自己申请并填入的 API Key</strong>，直接连接这些服务，不经过开发者或任何第三方中转：</p>
+<ul>
+  <li><strong>阿里云百炼（语音识别）</strong>：你说话时的录音会发送到阿里云百炼，换回文字。</li>
+  <li><strong>DeepSeek（整理、翻译、改写）</strong>：识别出的文字会发送到 DeepSeek 整理。你使用翻译、改写或语音指令时，相关的文字也会发送给它：包括你选中或刚输入的那段文字，以及指令要参考剪贴板时剪贴板里的文字。</li>
+</ul>
+<p>这些服务如何处理收到的数据，以它们各自的隐私政策为准。你的 API Key 只保存在这台 iPhone 的钥匙串里，不会发给开发者。</p>
+
+<h2>3. 键盘的「完全访问」</h2>
+<p>键盘需要打开「允许完全访问」，才能和 Hear&amp;Type App 传递录音指令和识别结果。打开后，键盘会这样使用权限：</p>
+<ul>
+  <li>键盘本身不联网，你用拼音或英文键盘打的字不会发送到任何地方。</li>
+  <li>为了把识别结果放到正确的位置、发现你改了刚打上去的词，键盘会读取光标附近的文字。这些文字只在手机上比较，不发送、不保存；改过的写法（例如“周总 → 邹总”）会记下来，以后自动改对。</li>
+  <li>只有你使用要参考剪贴板的指令时，键盘才读取剪贴板，系统会先询问你是否允许粘贴。</li>
+</ul>
+
+<h2>4. 其他权限</h2>
+<ul>
+  <li><strong>麦克风</strong>：只在你开始说话时用来录音。为了让键盘随时能开始录音，App 在后台保持待命，没在说话时麦克风是静音的，系统的录音指示灯不会亮。</li>
+</ul>
+
+<h2>5. 我们不做的事</h2>
+<ul>
+  <li>不使用任何统计、广告或崩溃收集 SDK。</li>
+  <li>不追踪你，不与任何人分享或出售你的数据。</li>
+  <li>App 不面向 13 岁以下儿童。</li>
+</ul>
+
+<h2>6. 删除数据</h2>
+<p>在 App 里可以删除单条记录、录音、词典里的词和更正过的写法。删除 App 会删除它保存在这台手机上的全部数据。已经发送给阿里云百炼或 DeepSeek 的内容，请按它们的规则处理。</p>
+
+<h2>7. 联系我们</h2>
+<p>对本政策有疑问，请发邮件到：<a href="mailto:chenhongjian245@163.com">chenhongjian245@163.com</a></p>
+<p class="muted">本政策如有变化，会更新本页并修改上面的生效日期。</p>
+</main>
+</body>
+</html>
