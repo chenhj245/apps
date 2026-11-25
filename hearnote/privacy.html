@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hear&amp;Note 隐私政策</title>
+<style>
+  :root { --bg: #ffffff; --text: #1c1c1e; --muted: #6e6e73; --line: #e5e5ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --text: #f2f2f7; --muted: #98989d; --line: #2c2c2e; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.7 -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: 14px; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Hear&amp;Note 隐私政策</h1>
+<p class="muted">生效日期：2026 年 11 月 25 日</p>
+
+<p>Hear&amp;Note 是一个语音笔记 App：在 iPhone 或 Apple Watch 上说一段话，App 把它识别成文字、整理成笔记。我们（开发者）不运营任何服务器，不收集、不保存、也看不到你的任何数据。下面说清楚你的数据在哪里、会发到哪里。</p>
+
+<h2>1. 数据存在哪里</h2>
+<ul>
+  <li>录音、识别出的文字、整理好的笔记、「身体」记录和「关于我」的档案，都只保存在你这台 iPhone 上的 Hear&amp;Note 里。</li>
+  <li>Apple Watch 上只临时存放还没传到手机的录音，手机收到后就删除。</li>
+  <li>录音在整理好之后保留 30 天，然后自动删除；文字一直保留，直到你删除它或删除 App。</li>
+  <li>App 不把数据写进 iCloud。只有你自己点「导出全部笔记」时，才会生成一份备份文件夹，存到你选的地方。</li>
+</ul>
+
+<h2>2. 会发到哪里</h2>
+<p>识别和整理要用到大模型服务。Hear&amp;Note 使用<strong>你自己申请并填入的 API Key</strong>，直接连接这些服务，不经过开发者或任何第三方中转：</p>
+<ul>
+  <li><strong>阿里云百炼（语音识别）</strong>：你的录音会发送到阿里云百炼，换回文字。</li>
+  <li><strong>DeepSeek（整理文字）</strong>：识别出的文字会发送到 DeepSeek，用来整理成笔记、摘出「身体」记录和「关于我」的档案、回答你在「聊」里问的问题。</li>
+</ul>
+<p>这些服务如何处理收到的数据，以它们各自的隐私政策为准。你的 API Key 只保存在这台 iPhone 的钥匙串里，不会出现在导出的备份里，也不会发给开发者。</p>
+<p>没有网络时，App 会用 iPhone 自带的语音识别在手机上先识别一版草稿，这一步不联网。</p>
+
+<h2>3. 「健康」数据</h2>
+<ul>
+  <li>只有你打开「身体」并同意授权后，App 才会<strong>只读</strong>「健康」里的睡眠、静息心率和步数，用来在「身体」页每天那一行显示。</li>
+  <li>App 从不往「健康」里写任何数据。</li>
+  <li>读到的数值只在显示时放在内存里：不保存进笔记、不进入导出的备份、不发送给任何服务（包括上面的大模型服务），也不用于广告或营销。</li>
+  <li>你随时可以在 iPhone 的 设置 › 隐私与安全性 › 健康 › Hear&amp;Note 里关掉。</li>
+</ul>
+
+<h2>4. 其他权限</h2>
+<ul>
+  <li><strong>麦克风</strong>：只在你开始录音时使用。</li>
+  <li><strong>语音识别</strong>：没有网络时在手机上识别草稿。</li>
+  <li><strong>提醒事项</strong>：只在你点「加到提醒事项」时，把那一条待办加进去。</li>
+  <li><strong>通知</strong>：笔记整理好时提醒你，以及每周回顾。</li>
+</ul>
+
+<h2>5. 我们不做的事</h2>
+<ul>
+  <li>不使用任何统计、广告或崩溃收集 SDK。</li>
+  <li>不追踪你，不与任何人分享或出售你的数据。</li>
+  <li>App 不面向 13 岁以下儿童。</li>
+</ul>
+
+<h2>6. 删除数据</h2>
+<p>在 App 里可以删除单条笔记和「关于我」里的任何一条。删除 App 会删除它保存在这台手机上的全部数据。已经发送给阿里云百炼或 DeepSeek 的内容，请按它们的规则处理。</p>
+
+<h2>7. 联系我们</h2>
+<p>对本政策有疑问，请发邮件到：<a href="mailto:chenhongjian245@163.com">chenhongjian245@163.com</a></p>
+<p class="muted">本政策如有变化，会更新本页并修改上面的生效日期。</p>
+</main>
+</body>
+</html>
